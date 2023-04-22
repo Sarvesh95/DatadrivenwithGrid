@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" name="Firefoxtest(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <classes>
+      <class name="testscripts.Search_Products_Test">
+        <methods>
+          <include name="setUP"/>
+          <include name="testExecution" invocation-numbers="1 2 3 4"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testscripts.Search_Products_Test -->
+    </classes>
+  </test> <!-- Firefoxtest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
